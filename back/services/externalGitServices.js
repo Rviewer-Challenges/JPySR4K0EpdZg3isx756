@@ -4,11 +4,12 @@ const url = 'https://api.github.com/users'
 
 const getGitRepos = async (user) => {
     try {
-        const gitInfo = await axios.get(`${url}/${user}/repos`,{
-            headers:{
-                'Authorization': `Bearer ${process.env.GIT_TOKEN}`
-            }
-        })
+        const gitInfo = await axios.get(`${url}/${user}/repos`)
+        // {
+        //     headers:{
+        //         'Authorization': `Bearer ${process.env.GIT_TOKEN}`
+        //     }
+        // })
 
         return gitInfo.data.map((item) => {
             return {
@@ -29,11 +30,11 @@ const getGitRepos = async (user) => {
 
 const getGitUserDetails = async (user) => {
     try {
-        const userInfo = await axios.get(`${url}/${user}`,{
-            headers:{
-                'Authorization': `Bearer ${process.env.GIT_TOKEN}`
-            }
-        });
+        const userInfo = await axios.get(`${url}/${user}`)
+        //     headers:{
+        //         'Authorization': `Bearer ${process.env.GIT_TOKEN}`
+        //     }
+        // });
         if (!userInfo) {
             throw new Error('No se ha localizado usuario en Github')
         }
