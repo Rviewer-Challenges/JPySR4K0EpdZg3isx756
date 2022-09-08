@@ -4,20 +4,20 @@ const url = 'https://api.github.com/users'
 
 const getGitRepos = async (user) => {
     try {
-<<<<<<< HEAD
+
         const gitInfo = await axios.get(`${url}/${user}/repos`)
         // {
         //     headers:{
         //         'Authorization': `Bearer ${process.env.GIT_TOKEN}`
         //     }
         // })
-=======
+
         const gitInfo = await axios.get(`${url}/${user}/repos`,{
             headers:{
                 'Authorization': `Bearer ${process.env.GIT_TOKEN}`
             }
         })
->>>>>>> ce8a35992ace401e598fa034004301f77d0e2248
+
 
         return gitInfo.data.map((item) => {
             return {
