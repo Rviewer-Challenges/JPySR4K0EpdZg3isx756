@@ -13,6 +13,17 @@
             "description": "Descripción de prueba",
             "language:": "ES"
         }]
+    },
+    "twitter":{
+        "username": "MoureDev",
+        "followers":11,
+        "tweet_count": 20,
+        "description": "cuenta de twitter",
+        "tweets":[{
+            "text": "textotwitter"
+        }]
+
+
     }
 },
 {
@@ -30,5 +41,16 @@
             "description": "Descripción de prueba2",
             "language:": "ES"
         }]
+    },
+    "twitter":{
+        "username": "midudev",
+        "followers":11,
+        "tweet_count": 20,
+        "description": "cuenta de twitter",
+        "tweets":[{
+            "text": "textotwitter"
+        }]
+
+
     }
 }]

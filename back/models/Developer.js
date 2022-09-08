@@ -22,6 +22,17 @@ const DeveloperSchema = Schema({
                 language: String,
             }]
 
+    },
+    twitter:{
+        username: String,
+        followers:Number,
+        tweet_count: Number,
+        description: String,
+        tweets:[{
+            text: String
+        }]
+
+
     }
 })
 
