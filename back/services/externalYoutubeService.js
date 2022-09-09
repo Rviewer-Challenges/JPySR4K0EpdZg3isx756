@@ -14,14 +14,7 @@ const getChannelInfo = async (url_code) => {
         return cleanDataYoutube.clearChannelData(data)
          
     } catch (error) {
-
-        console.log('====================================');
-        console.log("GET getChannelInfo");
-        console.log('====================================');
-        console.log(error);
-        console.log('====================================');
-        console.log('====================================');
-        throw {
+        throw{
             status: error?.status || 400,
             message: error?.message || 'No se ha podido actualizar datos de usuario de Youtube'
         }
@@ -33,15 +26,10 @@ const getChannelInfo = async (url_code) => {
 const getiVideosInfo =async(channelId)=>{
     try {
         const { data } = await axios.get(`${urlSearchVideos}${process.env.YOUTUBE_TOKEN}&channelId=${channelId}&part=id,snippet&order=date&maxResults=5`);
-        const videoInfo =cleanDataYoutube.clearVideoData(data)
-        return  videoInfo
+        return cleanDataYoutube.clearVideoData(data)
+        
     } catch (error) {
-        console.log('====================================');
-        console.log("GET VIDEOS INFO");
-        console.log('====================================');
-        console.log(error);
-        console.log('====================================');
-        console.log('====================================');
+       
         throw {
             status: error?.status || error?.code || 400,
             message: error?.message || 'No se ha podido actualizar datos de usuario de Youtube'
@@ -51,17 +39,11 @@ const getiVideosInfo =async(channelId)=>{
 const getListInfo = async(channelId)=>{
     try {
         const { data } = await axios.get(`${urlSearchList}${channelId}&key=${process.env.YOUTUBE_TOKEN}`);
-        const listsInfo = cleanDataYoutube.clearListData(data);
-        return listsInfo
+        return  cleanDataYoutube.clearListData(data);
+        
         
     } catch (error) {
-        console.error(error)
-        console.log('====================================');
-        console.log("getListInfo");
-        console.log('====================================');
-        console.log(error);
-        console.log('====================================');
-        console.log('====================================');
+
         throw {
             status: error?.status || 400,
             message: error?.message || 'No se ha podido actualizar datos de usuario de Youtube'

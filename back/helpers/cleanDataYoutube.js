@@ -4,8 +4,8 @@
 const clearChannelData = (data) => {
     const channelsInfo = {}
 
-    channelsInfo.regionCode = data?.regionCode || null
-    channelsInfo.channels = data?.items?.map(item => {
+    channelsInfo.regionCode = data.regionCode || null
+    channelsInfo.channels = data.items.map(item => {
         return {
             channelId: item.snippet.channelId,
             description: item.snippet.description,
@@ -17,7 +17,7 @@ const clearChannelData = (data) => {
 }
 
 const clearVideoData = (data) => {
-    const videosInfo = data.items.map(item => {
+    return data.items.map(item => {
 
         return {
             videoId: item.id.videoId,
@@ -27,13 +27,12 @@ const clearVideoData = (data) => {
 
         }
     })
-    return videosInfo
 
 }
 
 const clearListData = (data) => {
 
-    const listsInfo = data.items.map(item => {
+    return data.items.map(item => {
 
         return {
             id: item.id,
@@ -44,7 +43,6 @@ const clearListData = (data) => {
 
     })
 
-    return listsInfo;
 }
 
 module.exports = {
