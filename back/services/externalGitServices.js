@@ -54,7 +54,6 @@ const getGitUserDetails = async (user) => {
         }
 
     } catch (error) {
-        console.log(error)
         throw {
             status: error?.status || 500,
             message: error.message

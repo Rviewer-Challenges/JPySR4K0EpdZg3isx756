@@ -33,6 +33,23 @@ const DeveloperSchema = Schema({
         }]
 
 
+    },youtube:{
+        url_code: String,
+        regionCode: String,
+        channels:[{
+            channelId: String,
+            description: String,
+            channelTitle: String
+        }],
+        videos:[{
+            videoId:String,
+            title:String,
+            description: String,
+            thumbnail:String,
+        }],
+        lists:[{
+
+        }]
     }
 })
 

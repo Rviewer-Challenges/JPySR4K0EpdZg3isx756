@@ -37,17 +37,11 @@ const updateDeveloper = async(developer)=>{
     try {
 
         // const newDev = await Developer.create(developer)
-        const dev =await  Developer.findById(developer.id)
-        console.log(dev.id)
-        const result= await Developer.findByIdAndUpdate(dev.id,developer, {new:true})
-        console.log(result)
-        // if(!acknowledged){
-        //     throw new Error ('No se ha actualizado el developer')
-        // }
+        const dev =await  Developer.findById(developer.id);
+        const result= await Developer.findByIdAndUpdate(developer.id,developer, {new:true});
+        
 
     } catch (error) {
-        console.log(error)
-
         throw {
             status: error?.status || 500,
             message: error?.message || 'Error al buscar developers en base de datos'
