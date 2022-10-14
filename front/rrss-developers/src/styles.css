@@ -1,0 +1,35 @@
+.root {
+    background-color: black;
+}
+
+#headerContainer {
+    background-image: url("./ui/assets/back-white-develop2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+    padding: 25px;
+    }
+
+#header-form {
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    max-width: 900px;
+}
+
+.rrss-logos{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+
+.row-youtube-card{
+    height: 250px;
+    overflow: auto;
+
+}
+
+.profileButton{
+    width: 100px;
+}
+
