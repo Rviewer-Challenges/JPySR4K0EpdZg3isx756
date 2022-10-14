@@ -1,0 +1,68 @@
+[{
+    "developerJSON": {
+      "name": "Brais Moure"
+    },
+    "gitHubJSON": {
+      "gitUser": "MoureDev"
+    },
+    "youtubeJSON": {
+      "url_code": "MoureDevApps"
+    },"twitterJSON":{
+      "username":"mouredev"
+    }
+
+  }, {
+    "developerJSON": {
+      "name": "Miguel Ángel Durán"
+    },
+    "gitHubJSON": {
+      "gitUser": "midudev"
+    },
+    "youtubeJSON": {
+      "url_code": "midudev"
+    },"twitterJSON":{
+      "username":"midudev"
+    }
+
+  },{
+    "developerJSON": {
+      "name": "Carlos Azaustre"
+    },
+    "gitHubJSON": {
+      "gitUser": "carlosazaustre"
+    },
+    "youtubeJSON": {
+      "url_code": "CarlosAzaustre"
+    },"twitterJSON":{
+      "username":"carlosazaustre"
+    }
+  },{
+    "developerJSON": {
+      "name": " Fernando Herrera"
+    },
+    "gitHubJSON": {
+      "gitUser": "Klerith"
+    },
+    "youtubeJSON": {
+      "url_code": "FernandoHerreraCr"
+    },"twitterJSON":{
+      "username":"Fernando_Her85"
+    }
+  },{
+    "developerJSON": {
+      "name": " Gerardo Fernández"
+    },
+    "gitHubJSON": {
+      "gitUser": "ger86"
+    },
+    "youtubeJSON": {
+      "url_code": "LatteAndCode"
+    },"twitterJSON":{
+      "username":"latteandcode"
+    }
+  }
+
+
+
+
+]
